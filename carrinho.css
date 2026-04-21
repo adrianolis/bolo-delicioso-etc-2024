@@ -1,0 +1,130 @@
+/* Reset e variáveis */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --bg-color: #d1aed8;
+  --header-bg: #c396d6;
+  --text-color: #333;
+  --white: #ffffff;
+  --highlight-color: #7f3fbf;
+  --footer-bg: #3b0d54;
+  --button-bg: #7f3fbf;
+}
+body {
+  font-family: Arial, sans-serif;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: var(--header-bg);
+  color: var(--white);
+}
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.logo img {
+  width: 40px;
+  height: 40px;
+  margin-right: 0.5rem;
+}
+nav a {
+  margin: 0 1rem;
+  color: var(--white);
+  text-decoration: none;
+}
+.header-buttons {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.login-btn,
+.cart-btn {
+  background-color: var(--button-bg);
+  color: var(--white);
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+.cart-btn img {
+  width: 24px;
+  height: 24px;
+}
+.cart-table {
+  width: 90%;
+  margin: 2rem auto;
+  border-collapse: collapse;
+  text-align: left;
+}
+.cart-table th,
+.cart-table td {
+  padding: 1rem;
+  border-bottom: 1px solid var(--highlight-color);
+  color: var(--text-color);
+}
+.cart-table th {
+  background-color: var(--header-bg);
+  color: var(--white);
+  text-transform: uppercase;
+}
+.cart-table img {
+  width: 50px;
+  margin-right: 1rem;
+  vertical-align: middle;
+}
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+.continue-btn,
+.checkout-btn {
+  background-color: var(--highlight-color);
+  color: var(--white);
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+footer {
+  background-color: var(--footer-bg);
+  color: var(--white);
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
+  text-align: center;
+}
+.contact-info,
+.payment-methods {
+  text-align: center;
+}
+.contact-info h3,
+.payment-methods h3 {
+  margin-bottom: 0.5rem;
+}
+.social-media img {
+  width: 24px;
+  margin: 0 0.5rem;
+}
+.payment-methods img {
+  width: 24px;
+  margin: 0 0.3rem;
+}
